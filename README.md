@@ -1,0 +1,2 @@
+# MyNuxtECSite
+Lorem Ipsum Express
