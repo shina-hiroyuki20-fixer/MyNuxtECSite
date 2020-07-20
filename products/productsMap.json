@@ -1,0 +1,34 @@
+{
+  "productsMap": {
+    "id1": {
+      "prodName": "TestParrot1",
+      "prodPrice": "19801",
+      "prodThumb": "prodThumb1"
+    },
+    "id2": {
+      "prodName": "TestParrot2",
+      "prodPrice": "19802",
+      "prodThumb": "prodThumb1"
+    },
+    "id3": {
+      "prodName": "TestParrot3",
+      "prodPrice": "19803",
+      "prodThumb": "prodThumb2"
+    },
+    "id4": {
+      "prodName": "TestParrot4",
+      "prodPrice": "19804",
+      "prodThumb": "prodThumb2"
+    },
+    "id5": {
+      "prodName": "TestParrot5",
+      "prodPrice": "19805",
+      "prodThumb": "prodThumb2"
+    },
+    "id6": {
+      "prodName": "TestParrot6",
+      "prodPrice": "19806",
+      "prodThumb": "prodThumb1"
+    }
+  }
+}
