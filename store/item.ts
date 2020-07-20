@@ -5,7 +5,7 @@ export const state = () => ({
 });
 
 export const getters = {
-  findItemsByName: state => (prodName) => {
+  findItemsByName: state => (prodName: string) => {
     return Object.values(state.itemList).filter(a => a.prodName === prodName);
   }
 };
