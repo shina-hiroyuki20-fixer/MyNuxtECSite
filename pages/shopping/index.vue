@@ -73,7 +73,7 @@
   </v-app>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import ProdNameItemList from '~/components/ProdNameItemList.vue';
 
