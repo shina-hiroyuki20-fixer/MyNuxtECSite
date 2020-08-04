@@ -1,6 +1,6 @@
 <template>
   <v-app id="keep">
-    <v-app-bar app clipped-left color="amber">
+    <v-app-bar app clipped-left color="teal accent-3">
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <span class="title ml-3 mr-5">LoremIpsum&nbsp;<span class="font-weight-light">Shopping</span></span>
       <v-text-field
@@ -8,8 +8,12 @@
         flat
         hide-details
         label="Search"
-        prepend-inner-icon="search"
+        prepend-inner-icon="mdi-search"
       />
+      <v-spacer />
+      <v-btn large color="lime lighten-3">
+        My Cart
+      </v-btn>
       <v-spacer />
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" app clipped color="grey lighten-4">
@@ -74,6 +78,7 @@
 </template>
 
 <script>
+import '@mdi/font/css/materialdesignicons.css';
 import Vue from 'vue';
 import ProdNameItemList from '~/components/ProdNameItemList.vue';
 
@@ -85,27 +90,27 @@ export default Vue.extend({
   data: () => ({
     drawer: null,
     items: [
-      { icon: 'lightbulb_outline', text: 'Notes' },
-      { icon: 'touch_app', text: 'Reminders' },
+      { icon: 'mdi-lightbulb-outline', text: 'Lightbulbes' },
+      { icon: 'mdi-touch-app', text: 'Reminders' },
       { divider: true },
       { heading: 'Labels' },
-      { icon: 'add', text: 'Create new label' },
+      { icon: 'mdi-add', text: 'Create new label' },
       { divider: true },
-      { icon: 'archive', text: 'Archive' },
-      { icon: 'delete', text: 'Trash' },
+      { icon: 'mdi-archive', text: 'Archive' },
+      { icon: 'mdi-delete', text: 'Trash' },
       { divider: true },
-      { icon: 'settings', text: 'Settings' },
-      { icon: 'chat_bubble', text: 'Trash' },
-      { icon: 'help', text: 'Help' },
-      { icon: 'phonelink', text: 'App downloads' },
-      { icon: 'keyboard', text: 'Keyboard shortcuts' }
+      { icon: 'mdi-settings', text: 'Settings' },
+      { icon: 'mdi-chat-bubble', text: 'Trash' },
+      { icon: 'mdi-help', text: 'Help' },
+      { icon: 'mdi-phonelink', text: 'App downloads' },
+      { icon: 'mdi-keyboard', text: 'Keyboard shortcuts' }
     ]
   })
 });
 </script>
 
 <style>
-  #keep .v-navigation-drawer__border {
-    display: none
-  }
+#keep .v-navigation-drawer__border {
+  display: none
+}
 </style>
