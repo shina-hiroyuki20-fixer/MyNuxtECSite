@@ -15,7 +15,7 @@
   </v-layout>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'ProdNameItemList',
   props: {
