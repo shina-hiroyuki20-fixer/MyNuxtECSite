@@ -11,9 +11,11 @@
         prepend-inner-icon="mdi-search"
       />
       <v-spacer />
-      <v-btn large color="lime lighten-3">
-        My Cart
-      </v-btn>
+      <n-link to="/cart">
+        <v-btn large color="lime lighten-3">
+          My Cart
+        </v-btn>
+      </n-link>
       <v-spacer />
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" app clipped color="grey lighten-4">
