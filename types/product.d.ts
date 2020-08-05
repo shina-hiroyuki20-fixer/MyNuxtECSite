@@ -1,8 +1,8 @@
 export interface IProduct {
   id: number;
   name: string;
-  seller: string;
+  seller?: string;
   price: number;
-  thumbnail: string;
+  thumbnail?: string;
   isInCart: boolean;
 }
