@@ -15,7 +15,9 @@
   </v-layout>
 </template>
 
-<script lang="ts">
+<script>
+import { IProduct } from '~/types/product';
+
 export default {
   name: 'ProdNameItemList',
   props: {
@@ -26,7 +28,10 @@ export default {
   },
   computed: {
     itemList (): IProduct[] {
-      return this.$store.getters['item/findItemsByName'](this.itemList());
+      return this.$store.getters['item/findItems'](this);
+    },
+    itemNameList (): string[] {
+      return this.$store.getters['item/findItemsByName'](this.prodName);
     }
   }
 };
