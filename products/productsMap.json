@@ -1,34 +1,40 @@
 {
-  "productsMap": {
-    "id1": {
-      "prodName": "TestParrot1",
-      "prodPrice": "19801",
-      "prodThumb": "prodThumb1"
+  "productsMap": [
+    {
+      "id": 1,
+      "name": "TestParrot1",
+      "price": 19801,
+      "isInCart": false
     },
-    "id2": {
-      "prodName": "TestParrot2",
-      "prodPrice": "19802",
-      "prodThumb": "prodThumb1"
+    {
+      "id": 2,
+      "name": "TestParrot2",
+      "price": 19802,
+      "isInCart": false
     },
-    "id3": {
-      "prodName": "TestParrot3",
-      "prodPrice": "19803",
-      "prodThumb": "prodThumb2"
+    {
+      "id": 3,
+      "name": "TestParrot3",
+      "price": 19803,
+      "isInCart": false
     },
-    "id4": {
-      "prodName": "TestParrot4",
-      "prodPrice": "19804",
-      "prodThumb": "prodThumb2"
+    {
+      "id": 4,
+      "name": "TestParrot4",
+      "price": 19804,
+      "isInCart": false
     },
-    "id5": {
-      "prodName": "TestParrot5",
-      "prodPrice": "19805",
-      "prodThumb": "prodThumb2"
+    {
+      "id": 5,
+      "name": "TestParrot5",
+      "price": 19805,
+      "isInCart": false
     },
-    "id6": {
-      "prodName": "TestParrot6",
-      "prodPrice": "19806",
-      "prodThumb": "prodThumb1"
+    {
+      "id": 6,
+      "name": "TestParrot6",
+      "price": 19806,
+      "isInCart": false
     }
-  }
+  ]
 }

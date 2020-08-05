@@ -11,9 +11,11 @@
         prepend-inner-icon="mdi-search"
       />
       <v-spacer />
-      <v-btn large color="lime lighten-3">
-        My Cart
-      </v-btn>
+      <n-link to="/cart" class="link">
+        <v-btn large color="lime lighten-3">
+          My Cart
+        </v-btn>
+      </n-link>
       <v-spacer />
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" app clipped color="grey lighten-4">
@@ -54,12 +56,11 @@
     <v-main>
       <v-container fluid class="grey lighten-4 fill-height">
         <v-row justify="center" align="center">
-          <v-col class="shrink">
+          <v-col class="grow">
+            <ProdNameItemList filter-name="test" />
             <v-tooltip right>
               <v-layout column justify-center align-center>
-                <v-flex xs12 sm8 md6>
-                  <ProdNameItemList prod-name="TestParrot1" />
-                </v-flex>
+                <v-flex xs12 sm8 md6 />
               </v-layout>
               <!--              <template v-slot:activator="{ on }">-->
               <!--                <v-btn :href="source" icon large target="_blank" v-on="on">-->
@@ -112,5 +113,9 @@ export default Vue.extend({
 <style>
 #keep .v-navigation-drawer__border {
   display: none
+}
+
+.link {
+  text-decoration: none;
 }
 </style>

@@ -1,13 +1,19 @@
+import { IProduct } from '~/types/product.d.ts';
 import { productsMap } from '~/products/productsMap.json';
 
-export const state = () => ({
-  itemList: productsMap
+interface State {
+  itemList: IProduct[];
+}
+
+export const state: () => State = () => ({
+  itemList: Object.values(productsMap)
 });
 
-type IRootState = ReturnType<typeof state>;
-
 export const getters = {
-  findItemsByName: (state: IRootState) => (prodName: string) => {
-    return Object.values(state.itemList).filter(a => a.prodName === prodName);
-  }
+  findItems: (state:State): IProduct[] => Object.values(state.itemList),
+  findItemsByName: (state: State) => (name: string) => Object.values(state.itemList).filter(a => a.name === name)
 };
+
+export const mutations = {};
+
+export const actions = {};
