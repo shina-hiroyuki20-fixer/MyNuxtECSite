@@ -25,7 +25,7 @@ export default {
     }
   },
   computed: {
-    itemList () {
+    itemList (): IProduct[] {
       return this.$store.getters['item/findItemsByName'](this.itemList());
     }
   }
